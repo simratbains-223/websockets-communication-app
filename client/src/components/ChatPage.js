@@ -1,0 +1,20 @@
+import React from 'react';
+import ChatBar from './ChatBar';
+import ChatBody from './ChatBody';
+import ChatFooter from './ChatFooter';
+
+const ChatPage = ({ socket }) => {
+    
+  return (
+    <div className="chat">
+      <ChatBar />
+      <div className="chat__main">
+        <ChatBody />
+        {/* <ChatBody messages = {messages} /> */}
+        <ChatFooter socket = {socket}/>
+      </div>
+    </div>
+  );
+};
+
+export default ChatPage;
